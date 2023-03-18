@@ -189,3 +189,11 @@ We are following:
 ## License
 
 The [ME5413_Final_Project](https://github.com/NUS-Advanced-Robotics-Centre/ME5413_Final_Project) is released under the [MIT License](https://github.com/NUS-Advanced-Robotics-Centre/ME5413_Final_Project/blob/main/LICENSE)
+
+## Cartographer
+https://github.com/cartographer-project/cartographer_ros/issues/1726
+Comment out <depend>libabsl-dev</depend> in cartographer's (not cartographer_ros) package.xml
+
+https://github.com/ysl208/iRoPro/issues/59
+When calling catkin_make_isolated, pass the PYTHON_EXECUTABLE flag 
+catkin_make_isolated --install --use-ninja -DPYTHON_EXECUTABLE=/usr/bin/python3
